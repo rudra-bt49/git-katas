@@ -77,3 +77,11 @@ General Coding Standards in Full Stack Development
 
 3. Code Formatting:
     ○ Use Prettier to format code automatically on save.
+
+
+○ Basic Git Commands:
+    ■ git status: Check repository status.
+    ■ git add .: Stage changes.
+    ■ git commit -m "message": Commit changes.
+    ■ git push origin <branch-name>: Push changes to GitHub.
+    ■ git pull origin main: Pull latest changes from GitHub.
