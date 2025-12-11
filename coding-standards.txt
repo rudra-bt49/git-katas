@@ -1,0 +1,79 @@
+General Coding Standards in Full Stack Development
+
+#Python
+
+1. Naming Conventions
+    ○ Variables: Use snake_case (e.g., my_variable).
+    ○ Functions: Use snake_case (e.g., calculate_area()).
+    ○ Classes: Use PascalCase (e.g., Rectangle).
+    ○ Constants: Use ALL_UPPERCASE (e.g., PI = 3.14).
+
+2. Indentation:
+    ○ Use 4 spaces for indentation (do not use tabs).
+
+3. Docstrings:
+    ○ Always add docstrings for functions, methods, and classes:
+    def add_numbers(a, b):
+    """
+    Adds two numbers together.
+    :param a: The first number
+    :param b: The second number
+    :return: Sum of a and b
+    """
+    return a + b
+
+4. Error Handling:
+    ○ Use try-except blocks for error handling:
+    try:
+        result = divide(10, 0)
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
+
+
+#Node.js
+
+1. Naming Conventions:
+    ○ Variables/Functions: Use camelCase (e.g., calculateSum()).
+    ○ Classes: Use PascalCase (e.g., HttpServer).
+    ○ Constants: Use ALL_UPPERCASE (e.g., API_URL).
+
+2. Modularization:
+    ○ Break your code into smaller, reusable modules.
+
+3. Error Handling:
+    ○ Handle errors using try-catch for async functions:
+
+    try {
+        const data = await fetchData();
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+
+4. Linting with ESLint:
+    ○ Install and configure ESLint:
+    npm install eslint --save-dev
+    ○ Create a .eslintrc file:
+    JSON
+    {
+        "env": {
+            "browser": true,
+            "node": true
+        },
+        "extends": "eslint:recommended",
+        "rules": {
+            "indent": ["error", 2],
+            "quotes": ["error", "single"]
+        }
+    }
+
+#React
+
+1. Component Structure:
+    ○ Prefer functional components with hooks over class components.
+    ○ Keep components small and focused on a single responsibility.
+
+2. State Management:
+    ○ Use React Context API or Redux for managing global state.
+
+3. Code Formatting:
+    ○ Use Prettier to format code automatically on save.
